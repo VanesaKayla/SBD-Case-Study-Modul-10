@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd6ec,
+      #f3d1ff,
+      #fff3b0
+    );
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: rgba(255,255,255,0.85);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 24px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 10px rgba(236,72,153,0.3);
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
